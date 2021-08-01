@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".booking.FromToActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/toolbg"
+        app:titleTextColor="#ffffff"
+        tools:ignore="MissingConstraints"
+        android:layout_alignParentLeft="true" />
+
+    <ScrollView
+
+        android:layout_marginTop="60dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints">
+    <RelativeLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:foregroundGravity="center"
+        android:layout_gravity="center_vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/find_bus"
+            android:textAlignment="center"
+
+            android:textColor="#000"
+            android:textSize="30sp"
+
+            android:textStyle="italic" />
+
+
+        <!--  <android.support.design.widget.TextInputLayout
+              android:id="@+id/t1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="40dp">
+
+              <EditText
+                  android:id="@+id/start"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+
+                  android:autofillHints=""
+                  android:hint="@string/travel_from"
+                  android:inputType="text"
+                  android:lines="1"
+                  android:textAllCaps="false"
+                  android:textColor="#FA0F0D0D"
+                  android:textColorHighlight="#F5F4F4"
+                  android:textColorHint="#B20A0A0A"
+                  android:textColorLink="#000"
+                  tools:targetApi="o" />
+
+          </android.support.design.widget.TextInputLayout>-->
+
+          <!-- <android.support.design.widget.TextInputLayout
+              android:id="@+id/t2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/t1"
+              android:layout_marginBottom="30dp">
+
+             <EditText
+                  android:id="@+id/end"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:autofillHints=""
+                  android:hint="@string/travel_to"
+                  android:inputType="text"
+                  android:lines="1"
+                  android:textAllCaps="false"
+                  android:textColor="#FA0F0D0D"
+                  android:textColorHighlight="#F5F4F4"
+                  android:textColorHint="#B20A0A0A"
+                  android:textColorLink="#009688"
+                  android:textCursorDrawable="?attr/colorButtonNormal"
+                  tools:targetApi="o" />
+          </android.support.design.widget.TextInputLayout>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/from"
+            android:textColor="#000"
+            android:id="@+id/fromtext"
+            android:layout_below="@id/heading"/>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_below="@id/fromtext"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:textColor="#000"
+            android:id="@+id/totext"
+            android:layout_below="@id/spinner"/>
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_below="@id/totext"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner1"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/buttonbg"
+            android:text="@string/find"
+            android:textAlignment="center"
+            android:textColor="#F5F4F4" />
+
+        <TextView
+            android:id="@+id/Login"
+            android:layout_width="79dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/find"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginRight="162dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.687"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.163" />
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="78dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/find"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+
+            android:text="@string/sign_up"
+
+            android:textAlignment="center"
+            android:textColor="#000"
+
+            android:textSize="22sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.163"
+            tools:ignore="MissingConstraints" />
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

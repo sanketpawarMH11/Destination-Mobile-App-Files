@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Destination</string>
+    <string name="btn_advance">Advance (Auth)</string>
+    <string name="btn_basic">Basic (No Auth)</string>
+    <string name="btn_push">Push</string>
+    <string name="btn_remove_value">removeValue</string>
+    <string name="btn_set_value">setValue</string>
+    <string name="btn_update_children">updateChildren</string>
+    <string name="fail_read">Failed to read value: %s</string>
+
+    <string name="hint_title">Title</string>
+    <string name="hint_body">Write your bus…</string>
+    <string name="hint_username">Username…</string>
+    <string name="menu_chat">Chat</string>
+    <string name="menu_logout">Log out</string>
+    <string name="bus">Post</string>
+    <string name="send">SEND</string>
+
+    <string name="sign_in">Sign In</string>
+
+    <string name="username">Current username: %s \n\n</string>
+
+
+    <string name="todo">todo</string>
+    <string name="find">Find</string>
+    <string name="travel_to">Travel To</string>
+    <string name="find_bus">Find Bus</string>
+
+    <string name="password">Password</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="required">Required</string>
+    <string name="login_here">Login Here</string>
+    <string name="signup">SignUp</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_e_mail_id">Enter E-mail Id</string>
+    <string name="enter_mobile_no">Enter Mobile No</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="enter_name">Enter Customer Name</string>
+    <string name="signup_here">Sign Up Here</string>
+
+
+    <string name="action_sign_in_short">Register</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_link_to_register">Do not have an account? Sing up</string>
+    <string name="btn_link_to_login">already registered. login me!</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="who_you_are">Who You Are?</string>
+    <string name="login">Login</string>
+    <string name="i_am_a_traveller">I am a Traveller</string>
+    <string name="delete_bus">Delete Bus</string>
+    <string name="edit_bus">Edit Bus</string>
+    <string name="add_bus">Add Bus</string>
+    <string name="select_action">Select Action</string>
+    <string name="i_am_an_operator">I am an Operator</string>
+
+
+    <string name="email1">email</string>
+    <string name="textview">TextView</string>
+    <string name="seats">seats</string>
+    <string name="busnumber">BusNumber</string>
+
+    <string name="provider">provider</string>
+    <string name="route">route</string>
+    <string name="traveltime">travelTime</string>
+    <string name="rate">rate</string>
+    <string name="vehical">Vehical</string>
+
+    <string name="heading_recent">Search Result</string>
+    <string name="heading_my_posts">All Buses</string>
+    <string name="heading_my_top_posts">My Top Buses</string>
+    <string name="title_activity_basic">Basic</string>
+
+
+    <string name="add_bus_information">Add Bus Information</string>
+    <string name="vehical_name">Vehical Type</string>
+    <string name="enter_provider_name">Operator Company</string>
+    <string name="enter_bus_number">Bus Number</string>
+    <string name="total_seats">Total Seats</string>
+    <string name="traveling_route">Travelling Route</string>
+    <string name="travel_time">Travelling Time 24 hour format</string>
+    <string name="submit">Submit</string>
+    <string name="edit_bus_information">Edit Bus Information</string>
+    <string name="logout">Logout</string>
+    <string name="ticket_rate">Ticket Rate as 50.00</string>
+    <string name="your_buses_list">Your Buses List</string>
+    <string name="bus_in_your_hand">Bus In Your Hand</string>
+    <string name="routes">Routes</string>
+    <string name="busnum">BusNo</string>
+    <string name="seat">Seat</string>
+    <string name="operator">Operator</string>
+    <string name="time">Time</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="number_of_person">Number of person</string>
+    <string name="enter_journey_date">Enter Journey date</string>
+    <string name="enter_contact_no">Enter contact no.</string>
+    <string name="from">From</string>
+    <string name="travel_from">Travel From</string>
+    <string name="ticket">Ticket Rate :</string>
+    <string name="book_ticket">Book Ticket</string>
+    <string name="to">To</string>
+    <string name="exit">Exit</string>
+    <string name="total_fare">Total Fare</string>
+    <string name="contact_no">Contact No</string>
+    <string name="travelling_date">Travelling Date</string>
+    <string name="persons_travelling">Persons Travelling</string>
+    <string name="name">Name</string>
+    <string name="your_ticket">Your Ticket</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="pay">Pay</string>
+    <string name="rs">Ticket rate Rs.:</string>
+
+
+    <string-array name="headings">
+
+
+        <item> Bus List</item>
+        <item>Search Result</item>
+
+    </string-array>
+</resources>

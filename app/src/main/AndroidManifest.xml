@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.destination"
+    android:installLocation="auto">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logosnew"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".booking.Payment"></activity>
+        <activity android:name=".booking.MyBookings" />
+        <activity android:name=".booking.BookingDetailActivity" />
+        <activity android:name=".SignUpOperator" />
+        <activity android:name=".SelectActionActivity" />
+        <activity android:name=".LoginOperator" />
+        <activity android:name=".booking.FromToActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".booking.SignUpActivity" />
+        <activity android:name=".booking.LoginActivity" />
+        <activity android:name=".booking.BusListActivity" />
+        <activity android:name=".booking.BusBookActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".NewBusActivity" />
+        <activity android:name=".BusDetailActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

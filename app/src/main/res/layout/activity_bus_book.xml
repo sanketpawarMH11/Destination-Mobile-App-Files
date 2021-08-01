@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.destination.booking.BusBookActivity">
+
+
+
+    <include
+        android:id="@+id/post_author_layout"
+        layout="@layout/include_post_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <include
+        android:id="@+id/post_text_layout"
+        layout="@layout/include_post_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post_author_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/post_text_layout"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    <RelativeLayout
+        android:id="@+id/comment_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:weightSum="1.0">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="30dp"
+            android:hint="@string/enter_name"
+            />
+        <EditText
+            android:id="@+id/seats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:inputType="number"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@+id/name"
+            android:hint="@string/number_of_person"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_journey_date"
+            android:textColor="#363535"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/datetext"
+            android:layout_below="@id/seats"/>
+
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:lines="1"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@+id/datetext"
+            android:hint="@string/enter_contact_no"
+
+            android:autofillHints="" />
+
+
+        <Button
+            android:id="@+id/button_post_comment"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@+id/contact"
+            android:background="@drawable/buttonbg"
+            android:textColor="#F3F1F1"
+            android:text="@string/book_ticket"/>
+
+    </RelativeLayout>
+    </ScrollView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/scrollView2"
+        tools:listitem="@layout/item_comment"/>
+
+
+</RelativeLayout>

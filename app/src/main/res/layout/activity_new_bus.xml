@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	tools:context="com.example.destination.NewBusActivity">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:background="@drawable/toolbg"
+		app:titleTextColor="#ffffff"
+		tools:ignore="MissingConstraints"
+		android:layout_alignParentLeft="true" />
+
+	<ScrollView
+		android:id="@+id/scrollView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		tools:ignore="MissingConstraints">
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="60dp"
+			android:background="@drawable/rounded">
+
+			<TextView
+				android:id="@+id/heading"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="40dp"
+				android:text="@string/add_bus_information"
+				android:textAlignment="center"
+				android:textColor="#000"
+				android:textSize="24sp"
+				android:textStyle="italic"
+				tools:ignore="UnusedAttribute" />
+
+
+
+
+
+			<EditText
+				android:id="@+id/vehical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/heading"
+				android:layout_margin="@dimen/activity_horizontal_margin"
+				android:layout_marginBottom="30dp"
+				android:autofillHints=""
+				android:hint="@string/vehical_name"
+				android:inputType="text"
+				android:lines="1"
+				android:textAllCaps="false"
+				android:textColor="#FA0F0D0D"
+				android:textColorHighlight="#F5F4F4"
+
+				android:textCursorDrawable="?attr/colorButtonNormal"
+				tools:targetApi="o" />
+
+
+			<EditText
+				android:id="@+id/provi"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/vehical"
+				android:layout_margin="@dimen/activity_horizontal_margin"
+				android:layout_marginBottom="30dp"
+				android:autofillHints=""
+				android:hint="@string/enter_provider_name"
+				android:inputType="text"
+				android:lines="1"
+				android:textAllCaps="false"
+				android:textColor="#FA0F0D0D"
+				android:textColorHighlight="#F5F4F4"
+
+				android:textColorLink="#009688"
+				android:textCursorDrawable="?attr/colorButtonNormal"
+				tools:targetApi="o" />
+
+
+			<EditText
+				android:id="@+id/busno"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/provi"
+				android:layout_margin="@dimen/activity_horizontal_margin"
+				android:layout_marginBottom="30dp"
+				android:autofillHints=""
+				android:hint="@string/enter_bus_number"
+				android:inputType="text"
+				android:lines="1"
+				android:textAllCaps="false"
+				android:textColor="#FA0F0D0D"
+				android:textColorHighlight="#F5F4F4"
+
+				android:textColorLink="#009688"
+				android:textCursorDrawable="?attr/colorButtonNormal"
+				tools:targetApi="o" />
+
+			<EditText
+				android:id="@+id/se"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/busno"
+				android:layout_margin="@dimen/activity_horizontal_margin"
+				android:layout_marginBottom="30dp"
+				android:autofillHints=""
+				android:hint="@string/total_seats"
+				android:inputType="number"
+				android:lines="1"
+				android:textAllCaps="false"
+				android:textColor="#FA0F0D0D"
+				android:textColorHighlight="#F5F4F4"
+
+				android:textColorLink="#009688"
+				android:textCursorDrawable="?attr/colorButtonNormal"
+				tools:targetApi="o" />
+
+			<EditText
+				android:id="@+id/routef"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/se"
+				android:layout_marginStart="@dimen/activity_horizontal_margin"
+				android:layout_marginLeft="@dimen/activity_horizontal_margin"
+				android:layout_marginTop="@dimen/activity_horizontal_margin"
+				android:autofillHints=""
+				android:layout_marginBottom="30dp"
+				android:hint="@string/travel_from"
+				android:inputType="text"
+				android:lines="1"
+				android:textAllCaps="false"
+				android:textColor="#FA0F0D0D"
+				android:textColorHighlight="#F5F4F4"
+
+				android:textColorLink="#009688"
+				android:textCursorDrawable="?attr/colorButtonNormal"
+				tools:targetApi="o" />
+			<EditText
+				android:id="@+id/routet"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/routef"
+				android:layout_marginStart="@dimen/activity_horizontal_margin"
+				android:layout_marginLeft="@dimen/activity_horizontal_margin"
+				android:layout_marginTop="@dimen/activity_horizontal_margin"
+				android:autofillHints=""
+				android:layout_marginBottom="30dp"
+				android:hint="@string/travel_to"
+				android:inputType="text"
+				android:lines="1"
+				android:textAllCaps="false"
+				android:textColor="#FA0F0D0D"
+				android:textColorHighlight="#F5F4F4"
+
+				android:textColorLink="#009688"
+				android:textCursorDrawable="?attr/colorButtonNormal"
+				tools:targetApi="o" />
+
+			<EditText
+				android:id="@+id/ti"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/routet"
+				android:layout_margin="@dimen/activity_horizontal_margin"
+				android:layout_marginBottom="30dp"
+				android:autofillHints=""
+				android:hint="@string/travel_time"
+				android:inputType="time"
+				android:lines="1"
+				android:textAllCaps="false"
+				android:textColor="#FA0F0D0D"
+				android:textColorHighlight="#F5F4F4"
+
+				android:textColorLink="#009688"
+				android:textCursorDrawable="?attr/colorButtonNormal"
+				tools:targetApi="o" />
+
+			<EditText
+				android:id="@+id/ra"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/ti"
+				android:layout_marginTop="30dp"
+				android:layout_marginLeft="16dp"
+				android:layout_marginRight="16dp"
+				android:layout_marginBottom="60dp"
+				android:autofillHints=""
+				android:hint="@string/ticket_rate"
+				android:inputType="numberDecimal"
+				android:lines="1"
+				android:textAllCaps="false"
+				android:textColor="#FA0F0D0D"
+				android:textColorHighlight="#F5F4F4"
+
+				android:textColorLink="#009688"
+				android:textCursorDrawable="?attr/colorButtonNormal"
+				tools:targetApi="o" />
+
+		</RelativeLayout>
+	</ScrollView>
+
+	<android.support.design.widget.FloatingActionButton
+		android:id="@+id/fab_submit_post"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:layout_margin="@dimen/activity_vertical_margin"
+
+		android:src="@drawable/ic_navigation_check_24"
+
+		tools:layout_editor_absoluteX="317dp"
+		tools:layout_editor_absoluteY="622dp" />
+
+</RelativeLayout>
